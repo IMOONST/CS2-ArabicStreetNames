@@ -99,9 +99,9 @@ namespace ArabicStreetNames
                 { m_Setting.GetOptionGroupLocaleID(Setting.kFontGroup), "الخط" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.kAboutGroup), "حول" },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.Enabled)), "تشكيل الأسماء العربية" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.Enabled)), "تفعيل المود (الأسماء العربية على الخريطة)" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.Enabled)),
-                    "يرسم أسماء الطرق والأحياء العربية على الخريطة بحروف متصلة ومن اليمين إلى اليسار. الأسماء في القوائم لا تتأثر." },
+                    "يرسم أسماء الطرق والأحياء العربية على الخريطة بحروف متصلة ومن اليمين إلى اليسار. إيقافه يرجّع الخريطة فوراً كما ترسمها اللعبة بدون المود (مفيد لصور قبل وبعد)، وتشغيله يرجّع الإصلاح فوراً، بدون إعادة تشغيل اللعبة. الأسماء في القوائم لا تتأثر." },
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.KeepDiacritics)), "إبقاء التشكيل (الحركات)" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.KeepDiacritics)),
                     "يبقي الفتحة والضمة والكسرة وغيرها. محرك أسماء الخريطة لا يضعها فوق الحروف، لذلك تُحذف افتراضياً." },
