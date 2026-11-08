@@ -3,39 +3,9 @@
 	<!--Assigned on the first publish (2026-11-08).-->
 	<ModId Value="166814" />
 	<DisplayName Value="Arabic Street Names" />
-	<ShortDescription Value="Arabic road and district names drawn correctly on the map: connected letters, right-to-left. أسماء الشوارع العربية بشكل صحيح" />
+	<ShortDescription Value="Arabic road and district names drawn correctly on the map: connected letters, right-to-left." />
 	<LongDescription>
-# Arabic Street Names · أسماء الشوارع العربية
-
-**أسماء الطرق والأحياء بالعربي على الخريطة، مكتوبة كما تُكتب فعلاً.**
-
-اللعبة ترسم أسماء الطرق والأحياء على الخريطة بطريقة لا تدعم العربية، فتظهر الحروف منفصلة ومعكوسة الترتيب. هذا المود يصلح ذلك.
-
-## الميزات
-- **حروف متصلة**: أشكال الحرف في أول الكلمة ووسطها وآخرها ومنفرداً، مع ربط اللام ألف (لا، لأ، لإ، لآ).
-- **اتجاه من اليمين لليسار**، مع إبقاء الأرقام والكلمات اللاتينية من اليسار لليمين داخل الاسم العربي، وعكس الأقواس.
-- يعمل مع **أسماء الطرق وأسماء الأحياء**، ومنها الأسماء التي تكتبها بنفسك.
-- يستخدم خطوط اللعبة إذا كانت تحتوي الحروف العربية، وإلا يستخدم خطاً من ويندوز.
-- يغيّر أسماء الخريطة فقط: الأسماء في القوائم واللوحات لا تتأثر (واجهة اللعبة تدعم العربية أصلاً).
-
-## الإعدادات
-- تشغيل / إيقاف.
-- الإبقاء على التشكيل (الحركات) أو حذفه (محذوف افتراضياً لأن رسّام الأسماء لا يضعه فوق الحروف بدقة).
-- المسافة بين الكلمات (افتراضياً 10%).
-- حجم الحروف العربية (افتراضياً 60%).
-- الخط البديل: تلقائي / Arial / Tahoma / Segoe UI / بدون، مع عرض حالة الخط.
-
-## التوافق والأمان
-- يعدّل فقط استدعاءين اثنين يمرّران الاسم إلى رسّام أسماء الخريطة، عبر Harmony 2.3.3 (مرفق 0Harmony.dll، ومتوافق مع المودات التي تستخدم Harmony 2.2 و 2.3).
-- لا يحفظ أي شيء داخل مدينتك؛ يمكنك إزالته في أي وقت بأمان.
-
-## الدعم
-
-**إذا أعجبك المود وحبيت تدعمني:** [PayPal](https://paypal.me/MeshaalFayez). ولا تنسى تقيّم المود هنا وعلى GitHub.
-
----
-
-# English
+# Arabic Street Names
 
 **Arabic road and district names on the map, drawn the way they are written.**
 
@@ -74,10 +44,7 @@ The game draws road and district names on the map with a text renderer that does
 	<ModVersion Value="1.0.0" />
 	<GameVersion Value="1.6.*" />
 	<ChangeLog>
-1.0.0 - الإصدار الأول / First release
-
-- أسماء الطرق والأحياء العربية على الخريطة بحروف متصلة واتجاه صحيح من اليمين لليسار.
-- إعدادات: تشغيل/إيقاف، التشكيل، المسافة بين الكلمات، حجم الحروف، الخط البديل.
+1.0.0 - First release
 
 - Arabic road and district names on the map with connected letters and correct right-to-left order.
 - Options: on/off, diacritics, word spacing, letter size, fallback font.
