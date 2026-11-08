@@ -59,7 +59,6 @@ The game draws road and district names on the map with a text renderer that does
 	<Screenshot Value="Properties/Screenshot1.png" />
 	<Screenshot Value="Properties/Screenshot2.png" />
 	<Screenshot Value="Properties/Screenshot3.png" />
-	<Screenshot Value="Properties/Screenshot4.png" />
 	<Tag Value="Code Mod" />
 	<ExternalLink Type="github" Url="https://github.com/IMOONST/CS2-ArabicStreetNames" />
 	<ModVersion Value="1.0.0" />
