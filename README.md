@@ -4,14 +4,6 @@ A Cities: Skylines II code mod that draws Arabic road and district names correct
 
 [العربية](#أسماء-الشوارع-العربية)
 
-## Screenshots · الصور
-
-<p align="center">
-  <a href="ArabicStreetNames/Properties/Screenshot1.png"><img src="ArabicStreetNames/Properties/Screenshot1.png" width="100%" alt="Screenshot 1"></a>
-  <a href="ArabicStreetNames/Properties/Screenshot2.png"><img src="ArabicStreetNames/Properties/Screenshot2.png" width="49%" alt="Screenshot 2"></a>
-  <a href="ArabicStreetNames/Properties/Screenshot3.png"><img src="ArabicStreetNames/Properties/Screenshot3.png" width="49%" alt="Screenshot 3"></a>
-</p>
-
 ## Why
 The game draws map labels with TextMeshPro, which has no Arabic shaping or bidirectional ordering: Arabic names come out as separate letters in reverse order. The game's interface (Gameface) handles Arabic, so only the map labels need fixing.
 
