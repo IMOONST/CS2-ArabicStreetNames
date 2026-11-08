@@ -29,6 +29,10 @@
 - يعدّل فقط استدعاءين اثنين يمرّران الاسم إلى رسّام أسماء الخريطة، عبر Harmony 2.3.3 (مرفق 0Harmony.dll، ومتوافق مع المودات التي تستخدم Harmony 2.2 و 2.3).
 - لا يحفظ أي شيء داخل مدينتك؛ يمكنك إزالته في أي وقت بأمان.
 
+## الدعم
+
+**عجبك المود؟** مجاني وبيبقى مجاني. وإذا حاب تقول شكراً، تقدر [تدعمني بقهوة على PayPal](https://paypal.me/MeshaalFayez) ☕، ونجمة على GitHub أو تقييم هنا يفرق معي بنفس القدر.
+
 ---
 
 # English
@@ -54,6 +58,10 @@ The game draws road and district names on the map with a text renderer that does
 ## Compatibility and safety
 - Patches only the two calls that pass a name to the map label renderer, using Harmony 2.3.3 (0Harmony.dll included; compatible with mods built on Harmony 2.2 and 2.3).
 - Nothing is saved into your city; safe to remove at any time.
+
+## Support
+
+**Enjoying the mod?** It's free and always will be. If you'd like to say thanks, you can [buy me a coffee on PayPal](https://paypal.me/MeshaalFayez) ☕ — a star on GitHub or a rating here means just as much.
 	</LongDescription>
 	<Thumbnail Value="Properties/Thumbnail.png" />
 	<!--Screenshots are added by the user from the game (see README-PUBLISH.md at the repository root).-->
@@ -62,6 +70,7 @@ The game draws road and district names on the map with a text renderer that does
 	<Screenshot Value="Properties/Screenshot3.png" />
 	<Tag Value="Code Mod" />
 	<ExternalLink Type="github" Url="https://github.com/IMOONST/CS2-ArabicStreetNames" />
+	<ExternalLink Type="paypal" Url="https://paypal.me/MeshaalFayez" />
 	<ModVersion Value="1.0.0" />
 	<GameVersion Value="1.6.*" />
 	<ChangeLog>
