@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish>
+	<!--No ModId: Paradox Mods assigns it on the first publish (PublishNewMod) and the toolchain writes it here.-->
+	<DisplayName Value="Arabic Street Names" />
+	<ShortDescription Value="Arabic road and district names drawn correctly on the map: connected letters, right-to-left. أسماء الشوارع العربية بشكل صحيح" />
+	<LongDescription>
+# Arabic Street Names · أسماء الشوارع العربية
+
+**أسماء الطرق والأحياء بالعربي على الخريطة، مكتوبة كما تُكتب فعلاً.**
+
+اللعبة ترسم أسماء الطرق والأحياء على الخريطة بطريقة لا تدعم العربية، فتظهر الحروف منفصلة ومعكوسة الترتيب. هذا المود يصلح ذلك.
+
+## الميزات
+- **حروف متصلة**: أشكال الحرف في أول الكلمة ووسطها وآخرها ومنفرداً، مع ربط اللام ألف (لا، لأ، لإ، لآ).
+- **اتجاه من اليمين لليسار**، مع إبقاء الأرقام والكلمات اللاتينية من اليسار لليمين داخل الاسم العربي، وعكس الأقواس.
+- يعمل مع **أسماء الطرق وأسماء الأحياء**، ومنها الأسماء التي تكتبها بنفسك.
+- يستخدم خطوط اللعبة إذا كانت تحتوي الحروف العربية، وإلا يستخدم خطاً من ويندوز.
+- يغيّر أسماء الخريطة فقط: الأسماء في القوائم واللوحات لا تتأثر (واجهة اللعبة تدعم العربية أصلاً).
+
+## الإعدادات
+- تشغيل / إيقاف.
+- الإبقاء على التشكيل (الحركات) أو حذفه (محذوف افتراضياً لأن رسّام الأسماء لا يضعه فوق الحروف بدقة).
+- المسافة بين الكلمات (افتراضياً 10%).
+- حجم الحروف العربية (افتراضياً 60%).
+- الخط البديل: تلقائي / Arial / Tahoma / Segoe UI / بدون، مع عرض حالة الخط.
+
+## التوافق والأمان
+- يعدّل فقط استدعاءين اثنين يمرّران الاسم إلى رسّام أسماء الخريطة، عبر Harmony 2.3.3 (مرفق 0Harmony.dll، ومتوافق مع المودات التي تستخدم Harmony 2.2 و 2.3).
+- لا يحفظ أي شيء داخل مدينتك؛ يمكنك إزالته في أي وقت بأمان.
+
+---
+
+# English
+
+**Arabic road and district names on the map, drawn the way they are written.**
+
+The game draws road and district names on the map with a text renderer that does not support Arabic: letters come out separated and in reverse order. This mod fixes it.
+
+## Features
+- **Connected letters**: initial, medial, final and isolated forms, plus the lam-alef ligatures.
+- **Right-to-left order**, with numbers and Latin words kept left to right inside Arabic names, and mirrored brackets.
+- Works for **road names and district names**, including custom names you type.
+- Uses the game's own fonts when they have the Arabic letter forms, otherwise a Windows font.
+- Only the map labels change: names in menus and panels are untouched (the game's interface already handles Arabic).
+
+## Options
+- On / off.
+- Keep or drop diacritics (dropped by default: the label renderer cannot place them precisely over letters).
+- Word spacing (default 10%).
+- Arabic letter size (default 60%).
+- Fallback font: Auto / Arial / Tahoma / Segoe UI / None, with a font status line.
+
+## Compatibility and safety
+- Patches only the two calls that pass a name to the map label renderer, using Harmony 2.3.3 (0Harmony.dll included; compatible with mods built on Harmony 2.2 and 2.3).
+- Nothing is saved into your city; safe to remove at any time.
+	</LongDescription>
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<!--Screenshots are added by the user from the game (see README-PUBLISH.md at the repository root).-->
+	<Screenshot Value="Properties/Screenshot1.png" />
+	<Screenshot Value="Properties/Screenshot2.png" />
+	<Screenshot Value="Properties/Screenshot3.png" />
+	<Screenshot Value="Properties/Screenshot4.png" />
+	<Tag Value="Code Mod" />
+	<ModVersion Value="1.0.0" />
+	<GameVersion Value="1.6.*" />
+	<ChangeLog>
+1.0.0 - الإصدار الأول / First release
+
+- أسماء الطرق والأحياء العربية على الخريطة بحروف متصلة واتجاه صحيح من اليمين لليسار.
+- إعدادات: تشغيل/إيقاف، التشكيل، المسافة بين الكلمات، حجم الحروف، الخط البديل.
+
+- Arabic road and district names on the map with connected letters and correct right-to-left order.
+- Options: on/off, diacritics, word spacing, letter size, fallback font.
+	</ChangeLog>
+	<AccessLevel Value="Public" />
+</Publish>
