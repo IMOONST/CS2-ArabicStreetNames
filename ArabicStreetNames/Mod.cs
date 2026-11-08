@@ -26,10 +26,8 @@ namespace ArabicStreetNames
 
             Settings = new Setting(this);
             Settings.RegisterInOptionsUI();
-            var locales = GameManager.instance.localizationManager;
-            var text = new LocaleAR(Settings);
-            foreach (var locale in locales.GetSupportedLocales()) locales.AddSource(locale, text);
             AssetDatabase.global.LoadSettings(nameof(ArabicStreetNames), Settings, new Setting(this));
+            OptionsLocalization.Register(Settings);
 
             m_Harmony = new Harmony(HarmonyId);
             Patches.LabelNamePatch.Apply(m_Harmony);
@@ -40,6 +38,7 @@ namespace ArabicStreetNames
             Log.Info(nameof(OnDispose));
             m_Harmony?.UnpatchAll(HarmonyId);
             m_Harmony = null;
+            OptionsLocalization.Unregister();
             if (Settings != null)
             {
                 Settings.UnregisterInOptionsUI();

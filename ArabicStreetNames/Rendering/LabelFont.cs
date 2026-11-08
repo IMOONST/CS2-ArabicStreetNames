@@ -25,7 +25,7 @@ namespace ArabicStreetNames.Rendering
 
         private static bool s_Checked;
         private static bool s_FormsAvailable;
-        private static string s_Status = "";
+        private static Func<string> s_Status = () => "";
 
         public static bool FormsAvailable
         {
@@ -37,7 +37,7 @@ namespace ArabicStreetNames.Rendering
         }
 
         /// <summary>Shown on the Options page.</summary>
-        public static string StatusText => s_Checked ? s_Status : "لم تُرسم أسماء بعد (افتح مدينة)";
+        public static string StatusText => s_Checked ? s_Status() : Setting.Text("No names drawn yet (open a city)", "لم تُرسم أسماء بعد (افتح مدينة)");
 
         private static void Check()
         {
@@ -56,7 +56,7 @@ namespace ArabicStreetNames.Rendering
                 if (HasForms(font))
                 {
                     s_FormsAvailable = true;
-                    s_Status = "خطوط اللعبة تحتوي الحروف المتصلة";
+                    s_Status = () => Setting.Text("The game's fonts have the joined letter forms", "خطوط اللعبة تحتوي الحروف المتصلة");
                     Mod.Log.Info("Label font: the game's fonts have the Arabic presentation forms");
                     return;
                 }
@@ -70,7 +70,7 @@ namespace ArabicStreetNames.Rendering
                         if (added != null && HasForms(font))
                         {
                             s_FormsAvailable = true;
-                            s_Status = "أُضيف الخط الاحتياطي: " + name;
+                            s_Status = () => Setting.Text("Fallback font added: {name}", "أُضيف الخط الاحتياطي: {name}", "name", name);
                             Mod.Log.Info($"Label font: added {name} as a fallback for the Arabic presentation forms");
                             return;
                         }
@@ -79,13 +79,14 @@ namespace ArabicStreetNames.Rendering
                 }
 
                 s_FormsAvailable = false;
-                s_Status = "لا يوجد خط بالحروف المتصلة: تُعرض الأسماء بالترتيب الصحيح وحروف منفصلة";
+                s_Status = () => Setting.Text("No font with the joined letter forms: names show in the right order with separate letters", "لا يوجد خط بالحروف المتصلة: تُعرض الأسماء بالترتيب الصحيح وحروف منفصلة");
                 Mod.Log.Warn("Label font: no font with Arabic presentation forms; names are reordered but not shaped");
             }
             catch (Exception e)
             {
                 s_FormsAvailable = false;
-                s_Status = "تعذر فحص الخط: " + e.Message;
+                var message = e.Message;
+                s_Status = () => Setting.Text("The font check failed: {error}", "تعذر فحص الخط: {error}", "error", message);
                 Mod.Log.Error(e, "Label font check failed");
             }
         }

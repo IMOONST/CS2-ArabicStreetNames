@@ -25,6 +25,11 @@
 		<Reference Include="Unity.Collections"><Private>false</Private></Reference>
 		<Reference Include="Unity.Mathematics"><Private>false</Private></Reference>
 		<Reference Include="Unity.Burst"><Private>false</Private></Reference>
+		<Reference Include="Newtonsoft.Json"><Private>false</Private></Reference>
+	</ItemGroup>
+	<!--Options page languages (keyed by the English text): embedded as i18n.<code>.json-->
+	<ItemGroup>
+		<EmbeddedResource Include="i18n\*.json" LogicalName="i18n.%(Filename).json" />
 	</ItemGroup>
 	<!--Harmony patches the two calls that hand road and district names to the world label renderer. The game loads ONE 0Harmony for all mods (the first found), so ship the newest version other mods use (2.3.x adds API, e.g. HarmonyMethod from MethodInfo, that mods built on 2.3 need; it keeps 2.2 compatible)-->
 	<ItemGroup>
